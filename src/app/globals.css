@@ -31,3 +31,19 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.sparkle {
+  animation: sparkle 1.5s ease-in-out infinite;
+  animation-delay: 0s; /* Adjust as needed */
+}
